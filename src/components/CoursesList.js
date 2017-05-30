@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-import InitialCourses from '../constants/initialCourses';
+
+import { data } from './../services';
+//import InitialCourses from '../constants/initialCourses';
 
 import {
   Table,
@@ -26,7 +28,7 @@ class CourseList extends Component {
       deselectOnClickaway: true,
       showCheckboxes: false,
 
-      coursesList: InitialCourses
+      coursesList: data
     };
     this.calculateRating = this.calculateRating.bind(this);
   };

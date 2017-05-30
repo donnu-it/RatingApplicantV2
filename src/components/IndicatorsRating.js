@@ -2,6 +2,14 @@ import React, {Component} from 'react';
 import NumberInput from './NumberInput';
 import Create from 'material-ui/svg-icons/content/create';
 
+import { convertMark } from './../services';
+
+//const AdditionalRaitingData = (props) => {
+//  return (
+//
+//  );
+//};
+
 class IndicatorsRating extends Component {
   static defaultProps = {
     onChange: () => {},
@@ -72,7 +80,8 @@ class IndicatorsRating extends Component {
 
   blurCertHandler = (newValue) => {
     if (newValue !== '') {
-      let convValue = this.convertBall(newValue);
+      // let convValue = this.convertBall(newValue);
+      let convValue = convertMark(newValue);
       console.log(convValue);
       this.onFillOut("Середній бал атестату", convValue);
     }
