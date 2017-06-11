@@ -1,6 +1,8 @@
 import data from './constants/initialCourses';
+import dataSubjects from './constants/initialSubjects';
 import convertMark from './convertMark';
+import {pickOutCourses} from './calculations/calculations';
 
 export {
-  data, convertMark
+  data, dataSubjects, convertMark, pickOutCourses
 }

@@ -1,39 +1,16 @@
 const convertMark = (markValue) => {
-  if (markValue > 0 && markValue <= 2) return 100;
-  if (markValue > 2 && markValue <= 3) return 100 + (markValue - markValue.toFixed(2));
-  if (markValue > 0 && markValue <= 2) return 100;
-  if (markValue > 0 && markValue <= 2) return 100;
-  if (markValue > 0 && markValue <= 2) return 100;
-  if (markValue > 0 && markValue <= 2) return 100;
-  if (markValue > 0 && markValue <= 2) return 100;
-//  switch (true) {
-//    case (ball_12 > 0) && (ball_12 <= 2):
-//      return 100;
-//    case ball_12 > 2 && ball_12 < 3:
-//      return 100 + (ball_12 - parseInt(ball_12, 10)) * 10;
-//    case ball_12 >= 3 && ball_12 < 4:
-//      return 110 + (ball_12 - parseInt(ball_12, 10)) * 10;
-//    case ball_12 >= 4 && ball_12 < 5:
-//      return 120 + (ball_12 - parseInt(ball_12, 10)) * 10;
-//    case ball_12 >= 5 && ball_12 < 6:
-//      return 130 + (ball_12 - parseInt(ball_12, 10)) * 10;
-//    case ball_12 >= 6 && ball_12 < 7:
-//      return 140 + (ball_12 - parseInt(ball_12, 10)) * 10;
-//    case ball_12 >= 7 && ball_12 < 8:
-//      return 150 + (ball_12 - parseInt(ball_12, 10)) * 10;
-//    case ball_12 >= 8 && ball_12 < 9:
-//      return 160 + (ball_12 - parseInt(ball_12, 10)) * 10;
-//    case ball_12 >= 9 && ball_12 < 10:
-//      return 170 + (ball_12 - parseInt(ball_12, 10)) * 10;
-//    case ball_12 >= 10 && ball_12 < 11:
-//      return 180 + (ball_12 - parseInt(ball_12, 10)) * 10;
-//    case ball_12 >= 11 && ball_12 < 12:
-//      return 190 + (ball_12 - parseInt(ball_12, 10)) * 10;
-//    case ball_12 === 12:
-//      return 200;
-//    default:
-//      return 0;
-//  }
+  if (markValue >= 1 && markValue <= 2) return 100;
+  if (markValue > 2 && markValue < 3) return 100 + (markValue - parseInt(markValue, 10)) * 10;
+  if (markValue >= 3 && markValue < 4) return 110 + (markValue -parseInt(markValue, 10)) * 10;
+  if (markValue >= 4 && markValue < 5) return 120 + (markValue - parseInt(markValue, 10)) * 10;
+  if (markValue >= 5 && markValue < 6) return 130 + (markValue - parseInt(markValue, 10)) * 10;
+  if (markValue >= 6 && markValue < 7) return 140 + (markValue - parseInt(markValue, 10)) * 10;
+  if (markValue >= 7 && markValue < 8) return 150 + (markValue - parseInt(markValue, 10)) * 10;
+  if (markValue >= 8 && markValue < 9) return 160 + (markValue - parseInt(markValue, 10)) * 10;
+  if (markValue >= 9 && markValue < 10) return 170 + (markValue - parseInt(markValue, 10)) * 10;
+  if (markValue >= 10 && markValue < 11) return 180 + (markValue - parseInt(markValue, 10)) * 10;
+  if (markValue >= 11 && markValue < 12) return 190 + (markValue - parseInt(markValue, 10)) * 10;
+  if (markValue === 12) return 200;
 };
 
 export default convertMark;

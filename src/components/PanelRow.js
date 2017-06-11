@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NumberInput from './NumberInput';
 import Checkbox from 'material-ui/Checkbox'
-import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
+import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton';
 
 class PanelRow extends Component {
   static defaultProps = {
@@ -39,8 +39,8 @@ class PanelRow extends Component {
     this.setState({ checked: isInputChecked, value: this.props.min });
 
     this.state.radio ?
-    this.props.onChange("Англійська", this.state.value, isInputChecked, this.state.radio) :
-    this.props.onChange(this.state.name, this.state.value, isInputChecked, this.state.radio);
+      this.props.onChange("Англійська", this.state.value, isInputChecked, this.state.radio) :
+      this.props.onChange(this.state.name, this.state.value, isInputChecked, this.state.radio);
   };
 
   checkRadioHandler = (e, value) => {
@@ -56,11 +56,11 @@ class PanelRow extends Component {
   render() {
     const DetailList = this.props.detail.map( (detailItem, index) => {
       return (
-          <RadioButton
-            key={index}
-            label={detailItem}
-            value={detailItem}
-          />
+        <RadioButton
+          key={index}
+          label={detailItem}
+          value={detailItem}
+        />
       )
     });
 
@@ -79,19 +79,18 @@ class PanelRow extends Component {
             min={this.props.min}
             max={200}
             disabled={!this.state.checked}
-            onChange={this.changeHandler}
             onBlur={this.blurHandler}
           />
         </div>
         {
           this.state.checked && Object.keys(DetailList).length > 0 &&
           <div className="App-panel-detail">
-            <RadioButtonGroup name="shipSpeed" defaultSelected="Англійська"  onChange={this.checkRadioHandler}>
+            <RadioButtonGroup name="shipSpeed" defaultSelected="Англійська" onChange={this.checkRadioHandler}>
               {DetailList}
             </RadioButtonGroup>
           </div>
         }
-    </div>
+      </div>
     )
   }
 }

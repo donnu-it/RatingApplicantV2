@@ -3,3 +3,19 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.number{
+  background: #EA4223;
+  margin-top: 25px;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  line-height: 40px;
+  font-size: 24px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
