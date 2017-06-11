@@ -1,16 +1,21 @@
 import React from 'react';
 
-import { data, pickOutCourses } from './../services';
+import { calculate } from './../services';
 import Intro from './Intro';
 import TableInfo from './TableInfo';
 
 const CourseList = (props) => {
   const {list} = props;
-  let dataList = pickOutCourses(data, list);
+  const dataList = calculate(list).avaliableCourses();
+  if (typeof dataList === 'undefined') return false;
+
   return (
     <div>
-      {dataList.length == 0 && <Intro />}
-      {dataList.length > 0 && <TableInfo dataList={dataList} />}
+      {
+        dataList.length === 0 ? <Intro />
+        :
+        <TableInfo dataList={dataList} />
+      }
     </div>
   );
 };

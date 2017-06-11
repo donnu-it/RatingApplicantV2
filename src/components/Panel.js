@@ -61,7 +61,15 @@ const Panel = (props) => {
       />
       <div className="App-insert-wrapper">
         {dataSubjects.map( (row, index) => (
-            <PanelRow key={index} id={index} detail={row.detail} nameSubject={row.nameSubject} checked={row.checked} min={row.min} onChange={changeHandler} />
+            <PanelRow
+              key={index}
+              id={index}
+              detail={row.detail}
+              nameSubject={row.nameSubject}
+              checked={row.checked}
+              min={row.min}
+              onChange={changeHandler}
+            />
         ))}
       </div>
     </div>
