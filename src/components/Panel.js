@@ -53,13 +53,13 @@ const Panel = (props) => {
   };
 
   return (
-    <div className="App-panel App-panel-zno">
+    <div className="sidebar-panel">
       <AppBar
         title="Сертифікати ЗНО"
         showMenuIconButton={false}
-        className="App-panel-bar"
+        className="sidebar-panel__title"
       />
-      <div className="App-insert-wrapper">
+      <div className="sidebar-panel__switches">
         {dataSubjects.map( (row, index) => (
             <PanelRow
               key={index}

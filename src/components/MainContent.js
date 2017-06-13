@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Sidebar from './Sidebar';
-import CoursesList from './CoursesList';
+import Content from './Content';
 
 const MainContent = (props) => {
   return (
@@ -9,7 +9,7 @@ const MainContent = (props) => {
       <div className="row">
         <Sidebar {...props} />
         <div className="col-lg-9 col-md-9">
-          <CoursesList list={props.list} />
+          <Content list={props.list} />
         </div>
       </div>
     </div>

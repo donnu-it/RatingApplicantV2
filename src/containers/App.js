@@ -4,28 +4,28 @@ import { bindActionCreators } from 'redux';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import {green400, lime900, grey700, lime50} from 'material-ui/styles/colors';
-import '../App.css';
+import {lightBlue600, cyan500, lime900, grey700, lime50} from 'material-ui/styles/colors';
 
 import * as actions from '../actions/index';
 
 import * as components from './../components';
 
-const { Header, MainContent, Footer } = components;
+const { MainContent, Footer } = components;
 
 const muiTheme = getMuiTheme({
   palette: {
-    primary1Color: green400
+    primary1Color: lightBlue600
   },
   appBar: {
     height: 50,
   },
   svgIcon: {
-    color: lime900,
+    color: cyan500,
   },
   checkbox: {
     labelColor: lime900,
     labelDisabledColor: lime900,
+    checkedColor: cyan500,
     fontWeight: 100,
   },
   textField: {
@@ -39,14 +39,14 @@ const muiTheme = getMuiTheme({
   radioButton: {
     labelColor: lime900,
     labelDisabledColor: lime900,
+    checkedColor: cyan500
   },
 });
 
 const App = (props) => {
   return (
     <MuiThemeProvider muiTheme={muiTheme}>
-      <div className="App">
-        <Header />
+      <div>
         <MainContent {...props} />
         <Footer />
       </div>

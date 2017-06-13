@@ -1,10 +1,15 @@
 
 const list = [
-    {
-      name: "Українська мова",
-      value: 100,
-      checked: true
-    }
+  {
+    name: "Українська мова",
+    value: 100,
+    checked: true
+  },
+  {
+    name: "Творчий конкурс",
+    value: 115,
+    checked: true
+  }
   ];
 
 export default function listReducer(state = list, action) {

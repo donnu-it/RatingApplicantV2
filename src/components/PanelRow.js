@@ -37,7 +37,7 @@ class PanelRow extends Component {
 
   checkHandler = (e, isInputChecked) => {
     this.setState({ checked: isInputChecked, value: this.props.min });
-
+    this.state.radio && this.setState({ name: "Англійська" });
     this.state.radio ?
       this.props.onChange("Англійська", this.state.value, isInputChecked, this.state.radio) :
       this.props.onChange(this.state.name, this.state.value, isInputChecked, this.state.radio);
@@ -66,12 +66,12 @@ class PanelRow extends Component {
 
     return(
       <div>
-        <div className="App-panel-row">
+        <div className="sidebar-panel_checkbox">
           <Checkbox
             label={this.props.nameSubject}
             disabled={this.state.disabled}
             checked={this.state.checked}
-            className="App-panel-checkbox"
+            className="sidebar-panel_checkbox_label"
             onCheck={this.checkHandler}
           />
           <NumberInput
@@ -84,7 +84,7 @@ class PanelRow extends Component {
         </div>
         {
           this.state.checked && Object.keys(DetailList).length > 0 &&
-          <div className="App-panel-detail">
+          <div className="sidebar-panel_radio">
             <RadioButtonGroup name="shipSpeed" defaultSelected="Англійська" onChange={this.checkRadioHandler}>
               {DetailList}
             </RadioButtonGroup>

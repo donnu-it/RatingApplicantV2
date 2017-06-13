@@ -4,7 +4,7 @@ import { calculate } from './../services';
 import Intro from './Intro';
 import TableInfo from './TableInfo';
 
-const CourseList = (props) => {
+const Content = (props) => {
   const {list} = props;
   const dataList = calculate(list).avaliableCourses();
   if (typeof dataList === 'undefined') return false;
@@ -20,4 +20,4 @@ const CourseList = (props) => {
   );
 };
 
-export default CourseList;
+export default Content;

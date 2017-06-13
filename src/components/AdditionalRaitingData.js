@@ -38,22 +38,14 @@ const AdditionalRaitingData = (props) => {
   };
 
   return (
-    <div className="App-panel App-panel-ball">
-      <div className="App-bal-row">
-        <div className="Icon-name-row">
+    <div className="sidebar-input">
+      <div className="sidebar-input__row">
           <Create />
-        </div>
-        <div className="Icon-name-row">
           <NumberInput name="Середній бал атестату" onBlur={blurCertHandler} floatingLabelText="Середній бал атестату"  min={1} max={12} hintText="за 12 шкалою"/>
-        </div>
       </div>
-      <div className="App-bal-row">
-        <div className="Icon-name-row">
+      <div className="sidebar-input__row">
           <Create />
-        </div>
-        <div className="Icon-name-row">
           <NumberInput name="Бал за підготовчі курси" onBlur={blurCoursesHandler} floatingLabelText="Бал за підготовчі курси"  min={100} max={200} hintText="за шкалою від 100 до 200" />
-        </div>
       </div>
     </div>
   );
