@@ -2,7 +2,6 @@
   "name": "rating-calculation",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://yulia-a.github.io/Rating-Applicant",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "material-ui": "^0.18.0",
@@ -17,6 +16,7 @@
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "react-scripts": "0.9.5"
   },
   "scripts": {
