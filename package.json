@@ -2,6 +2,7 @@
   "name": "rating-calculation",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://yulia-a.github.io/Rating-Applicant",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "material-ui": "^0.18.0",
@@ -23,6 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom --color",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
