@@ -1,6 +1,4 @@
 import React from 'react';
-
-import { Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn } from 'material-ui/Table';
 import School from 'material-ui/svg-icons/social/school';
 
 const TableInfo  = ({ dataList }) => {
