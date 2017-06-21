@@ -1,3 +1,14 @@
+body, html, #root{
+  height: 100%;
+}
+#app{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#main{
+  flex: 1 0 auto;
+}
 body {
   margin: 0;
   padding: 0;
@@ -77,6 +88,9 @@ body {
     margin-top: 0;
     margin-left: 0;
   }
+  .intro-block h1{
+    font-size: 24px;
+  }
 }
 .icon_row:first-child {
   display: inline-block;
@@ -137,7 +151,7 @@ a {
 }
 
 .footer {
-  margin-top: 100px;
+  margin-top: 50px;
   background: #039BE5;
   color: white;
 }

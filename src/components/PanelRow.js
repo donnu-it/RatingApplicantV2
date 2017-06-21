@@ -53,6 +53,11 @@ class PanelRow extends Component {
     this.props.onChange(this.state.name, newValue, this.state.checked, this.state.radio);
   };
 
+  changeHandler = (newValue) => {
+    this.setState({ value: newValue });
+    this.props.onChange(this.state.name, newValue, this.state.checked, this.state.radio);
+  };
+
   render() {
     const DetailList = this.props.detail.map( (detailItem, index) => {
       return (
@@ -80,6 +85,7 @@ class PanelRow extends Component {
             max={200}
             disabled={!this.state.checked}
             onBlur={this.blurHandler}
+            onChange={this.changeHandler}
           />
         </div>
         {

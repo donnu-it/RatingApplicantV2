@@ -18,7 +18,7 @@ const AdditionalRaitingData = (props) => {
     onChange(newList);
   };
 
-  const blurCertHandler = (newValue) => {
+  const changeCertHandler = (newValue) => {
     if (newValue !== '') {
       let convValue = convertMark(newValue);
       onFillOut("Середній бал атестату", convValue);
@@ -28,7 +28,7 @@ const AdditionalRaitingData = (props) => {
     }
   };
 
-  const blurCoursesHandler = (newValue) => {
+  const changeCoursesHandler = (newValue) => {
     if (newValue !== '') {
       onFillOut("Бал за підготовчі курси", newValue);
     }
@@ -41,11 +41,11 @@ const AdditionalRaitingData = (props) => {
     <div className="sidebar-input">
       <div className="sidebar-input__row">
           <Create />
-          <NumberInput name="Середній бал атестату" onBlur={blurCertHandler} floatingLabelText="Середній бал атестату"  min={1} max={12} hintText="за 12 шкалою"/>
+          <NumberInput name="Середній бал атестату" onChange={changeCertHandler} floatingLabelText="Середній бал атестату"  min={1} max={12} hintText="за 12 шкалою"/>
       </div>
       <div className="sidebar-input__row">
           <Create />
-          <NumberInput name="Бал за підготовчі курси" onBlur={blurCoursesHandler} floatingLabelText="Бал за підготовчі курси"  min={100} max={200} hintText="за шкалою від 100 до 200" />
+          <NumberInput name="Бал за підготовчі курси" onChange={changeCoursesHandler} floatingLabelText="Бал за підготовчі курси"  min={100} max={200} hintText="за шкалою від 100 до 200" />
       </div>
     </div>
   );

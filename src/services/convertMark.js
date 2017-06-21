@@ -10,7 +10,7 @@ const convertMark = (markValue) => {
   if (markValue >= 9 && markValue < 10) return 170 + (markValue - parseInt(markValue, 10)) * 10;
   if (markValue >= 10 && markValue < 11) return 180 + (markValue - parseInt(markValue, 10)) * 10;
   if (markValue >= 11 && markValue < 12) return 190 + (markValue - parseInt(markValue, 10)) * 10;
-  if (markValue === 12) return 200;
+  if (markValue == 12) return 200;
 };
 
 export default convertMark;

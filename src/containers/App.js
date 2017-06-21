@@ -46,7 +46,7 @@ const muiTheme = getMuiTheme({
 const App = (props) => {
   return (
     <MuiThemeProvider muiTheme={muiTheme}>
-      <div>
+      <div id="app">
         <MainContent {...props} />
         <Footer />
       </div>

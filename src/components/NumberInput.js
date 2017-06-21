@@ -21,6 +21,7 @@ const getValidDefaultValue = (defaultValue, props) => {
 
 const getValidValue = (value, defaultValue, props) => {
   let validValue = +value;
+
   if (isNaN(validValue)) {
     validValue = defaultValue || '';
   }
@@ -50,7 +51,7 @@ class NumberInput extends Component {
   static propTypes = {
     id: React.PropTypes.string,
     name: React.PropTypes.string,
-    value: React.PropTypes.number,
+   // value: React.PropTypes.number,
     defaultValue: React.PropTypes.number,
     disabled: React.PropTypes.bool,
     floatingLabelText: React.PropTypes.string,
@@ -72,10 +73,11 @@ class NumberInput extends Component {
     this.oldValue = this.state.value;
   }
   blurHandler = (...props) => {
-    let isSubj = (this.props.name !== "Середній бал атестату") && (this.props.name !== "Бал за підготовчі курси");
-    let newValue = this.state.value;
+    let newValue = 0;
+    if (this.state.value.length > 0) {
+      newValue = parseFloat(this.state.value);
+    }
     let isFixed = false;
-
     if (newValue < this.props.min) {
       newValue = this.props.min;
       isFixed = true;
@@ -89,24 +91,31 @@ class NumberInput extends Component {
     }
 
     if (this.oldValue !== newValue || isFixed) {
-      !isSubj && newValue > 0 ? this.setState({ value: newValue.toFixed(1) }) : this.setState({ value: newValue });
-      isSubj && this.setState({ value: newValue.toFixed(1) });
+      if (newValue > 0) {
+        this.oldValue = newValue;
+        newValue = newValue.toFixed(1);
+      }
+      this.setState({ value: newValue });
       this.oldValue = newValue;
     }
-
-    this.props.onBlur(newValue);
+    this.props.onChange(newValue);
   };
   changeHandler = (e) => {
-    let newValue = +e.target.value;
+    let newValue = e.target.value;
+    newValue = newValue.replace(/,/g, '.');
+    newValue = newValue.replace(/-/g, '');
     if (!isNaN(newValue)) {
-      this.setState({ value: newValue });
-    }
-    if (newValue <= 0) {
-      if (this.props.floatingLabelText) {
+      if (newValue.length > 0) {
+        this.setState({value: newValue})
+        if (newValue <= this.props.max) {
+          this.props.onChange(parseFloat(newValue).toFixed(1));
+        }
+      }
+      else {
         this.setState({ value: '' });
+        this.props.onChange(0);
       }
     }
-    this.props.onChange(e);
   };
   componentWillReceiveProps(nextProps) {
     nextProps.disabled &&
@@ -119,7 +128,6 @@ class NumberInput extends Component {
       <div className="lgx-number-field">
         <TextField
           className="lgx-text-field"
-
           id={this.props.id}
           name={this.props.name}
           value={this.state.value}
