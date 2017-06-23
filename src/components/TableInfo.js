@@ -23,7 +23,7 @@ const TableInfo  = ({ dataList }) => {
               <div className="icon_row">
                 <p><a href={row.url} className="cell-title">{row.profession}</a></p>
                 {row.rating > 0 && row.profession !== 'Журналістика' && <p className="cell-detail"> Рейтинг абітурієнта: {(row.rating).toFixed(2)}</p>}
-                {row.rating > 0 && row.profession === 'Журналістика' && <p className="cell-detail">Рейтинг абітурієнта: {(row.rating).toFixed(2) - 28.75} (без урахування творчого конкурсу)</p>}
+                {row.rating > 0 && row.profession === 'Журналістика' && <p className="cell-detail">Рейтинг абітурієнта: {(((row.rating)/1.03- 28.75)*1.03).toFixed(2)} (без урахування творчого конкурсу)</p>}
               </div>
             </td>
             <td>
