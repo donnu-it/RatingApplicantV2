@@ -385,7 +385,7 @@ export default [
   {
     department: 'Економічний',
     profession: 'Економіка',
-    program: 'Економіка (Бізнес-аналітика та статистика; Економічна кібернетика)',
+    program: 'Економіка (Бізнес-аналітика)',
     url: 'http://ec.donnu.edu.ua',
     koefCert: 0.10,
     koefCourses: 0,
@@ -554,8 +554,43 @@ export default [
     ]
   },
   {
+    department: 'Історичний',
+    profession: 'Міжнародні відносини, суспільні комунікації та регіональні студії',
+    program: 'Міжнародні відносини',
+    url: 'http://hist.donnu.edu.ua',
+    koefCert: 0.10,
+    koefCourses: 0,
+    items: [
+      {
+        name: 'Українська мова',
+        koefItem: 0.25,
+        minVal: 100,
+        priority: 0
+      },
+      {
+        name: 'Історія України',
+        koefItem: 0.35,
+        minVal: 100,
+        priority: 1
+      },
+      {
+        name: 'Іноземна мова',
+        koefItem: 0.30,
+        minVal: 100,
+        priority: 3,
+        detail: ['Англійська', 'Німецька', 'Французька', 'Іспанська']
+      },
+      {
+        name: '',
+        koefItem: 0,
+        minVal: 0,
+        priority: 3
+      }
+    ]
+  },
+  {
     department: 'Економічний',
-    profession: 'Міжнародні  економічні відносини ',
+    profession: 'Міжнародні економічні відносини ',
     program: 'Міжнародна економіка',
     url: 'http://ec.donnu.edu.ua',
     koefCert: 0.10,
@@ -590,8 +625,8 @@ export default [
   },
   {
     department: 'Економічний',
-    profession: 'Міжнародні  економічні відносини ',
-    program: 'Міжнародний бізнес',
+    profession: 'Міжнародні економічні відносини ',
+    program: 'Міжнародний бізнес. Бізнес-переклад',
     url: 'http://ec.donnu.edu.ua',
     koefCert: 0.10,
     koefCourses: 0,
@@ -625,7 +660,7 @@ export default [
   },
   {
     department: 'Економічний',
-    profession: 'Міжнародні  економічні відносини',
+    profession: 'Міжнародні економічні відносини',
     program: 'International Bussiness (Міжнародний бізнес)',
     url: 'http://ec.donnu.edu.ua',
     koefCert: 0.10,
@@ -638,7 +673,7 @@ export default [
         priority: 0
       },
       {
-        name: 'Історія України',
+        name: 'Математика',
         koefItem: 0.30,
         minVal: 100,
         priority: 1
@@ -651,9 +686,9 @@ export default [
         detail: ['Англійська', 'Німецька', 'Французька', 'Іспанська']
       },
       {
-        name: '',
-        koefItem: 0,
-        minVal: 0,
+        name: 'Географія',
+        koefItem: 0.30,
+        minVal: 170,
         priority: 3
       }
     ]
@@ -1277,7 +1312,7 @@ export default [
   },
   {
     department: 'Математики та ІТ',
-    profession: 'Комп’ютерні науки та інформаційні технології',
+    profession: 'Комп’ютерні науки',
     program: "Сучасні інформаційні технології та програмування",
     url: 'http://math.donnu.edu.ua',
     koefCert: 0.10,
@@ -1311,7 +1346,7 @@ export default [
   },
   {
     department: 'Фізико-технічний',
-    profession: 'Комп’ютерні науки та інформаційні технології',
+    profession: 'Комп’ютерні науки',
     program: "Розробка програмного забезпечення та комп’ютерна графіка",
     url: 'http://phys.donnu.edu.ua',
     koefCert: 0.10,
@@ -1346,7 +1381,7 @@ export default [
   },
   {
     department: 'Фізико-технічний',
-    profession: 'Комп’ютерні науки та інформаційні технології',
+    profession: 'Комп’ютерні науки',
     program: "Computer Science (Комп'ютерні науки)",
     url: 'http://phys.donnu.edu.ua',
     koefCert: 0.10,
@@ -1416,7 +1451,7 @@ export default [
   },
   {
     department: 'Фізико-технічний',
-    profession: 'Метрологія  та інформаційно-вимірювальна техніка',
+    profession: 'Метрологія та інформаційно-вимірювальна техніка',
     program: "Стандартизація, сертифікація та управління якістю в інформаційних технологіях",
     url: 'http://phys.donnu.edu.ua',
     koefCert: 0.10,
