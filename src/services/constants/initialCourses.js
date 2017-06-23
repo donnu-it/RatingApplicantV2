@@ -638,13 +638,13 @@ export default [
         priority: 0
       },
       {
-        name: 'Історія України',
+        name: 'Математика',
         koefItem: 0.30,
         minVal: 100,
         priority: 1
       },
       {
-        name: 'Математика',
+        name: 'Географія',
         koefItem: 0.30,
         minVal: 100,
         priority: 2
