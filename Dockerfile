@@ -40,6 +40,7 @@ EXPOSE 80
 
 STOPSIGNAL SIGTERM
 
+#Copy
 COPY docs/ /usr/share/nginx/html
 
 CMD ["nginx", "-g", "daemon off;"]
