@@ -29,7 +29,11 @@ const calculate = (dataInput) => {
       index = selectedItemName.indexOf(key);
       return ((index !== -1) && (dataInput[index].value >= elem[key]));
     };
-    const everyCompulsory = compulsorySubj.every(isConsist);
+    const everyCompulsory = compulsorySubj.filter(elem => {
+      let key = '';
+      for(let prop in elem) if (elem.hasOwnProperty(prop)) { key = prop; }
+      return selectedItemName.includes(key)
+    }).every(isConsist);
     const someChoose = chooseSubj.some(isConsist);
     return ((everyCompulsory  === true) && (someChoose  === true));
   };

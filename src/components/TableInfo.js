@@ -28,7 +28,7 @@ const TableInfo  = ({ dataList }) => {
             </td>
             <td>
               <p className="cell-title">{row.program}</p>
-              <p className="cell-detail">Коефіцієнт атестату: {row.koefCert}</p>
+              {row.koefCert > 0 && <p className="cell-detail">Коефіцієнт атестату: {row.koefCert}</p>}
               {row.koefCourses > 0 && <p className="cell-detail"> Коефіцієнт за курси: {row.koefCourses}</p>}
             </td>
             <td>
