@@ -29,13 +29,12 @@ const calculate = (dataInput) => {
       index = selectedItemName.indexOf(key);
       return ((index !== -1) && (dataInput[index].value >= elem[key]));
     };
-    const everyCompulsory = compulsorySubj.filter(elem => {
-      let key = '';
-      for(let prop in elem) if (elem.hasOwnProperty(prop)) { key = prop; }
-      return selectedItemName.includes(key)
-    }).every(isConsist);
+
+    const subj1 = compulsorySubj.slice(0, 1).every(isConsist);
+    const subj2 = compulsorySubj.slice(1).some(isConsist);
+
     const someChoose = chooseSubj.some(isConsist);
-    return ((everyCompulsory  === true) && (someChoose  === true));
+    return ((subj1  === true) && (subj2  === true) && (someChoose  === true));
   };
 
   const ratingCourse = (course) => {
@@ -52,7 +51,7 @@ const calculate = (dataInput) => {
     };
 
     const getAllCoursesKoef = () => {
-      let newList = { 'Середній бал атестату': course.koefCert, 'Бал за підготовчі курси': course.koefCourses };
+      let newList = { 'Середній бал атестату': course.koefCert || 0, 'Бал за підготовчі курси': course.koefCourses || 0 };
       course.items.forEach(item => {
         newList = { ...newList, ...getKoef(item) };
       });
@@ -85,8 +84,8 @@ const calculate = (dataInput) => {
     const unitSubj = [
       ...compulsorySubj,
       maxOfChooseSubj(),
-      { 'Середній бал атестату': course.koefCert },
-      { 'Бал за підготовчі курси': course.koefCourses }
+      { 'Середній бал атестату': course.koefCert || 0 },
+      { 'Бал за підготовчі курси': course.koefCourses || 0}
     ];
 
     const getRating = (prevItem, curItem) => {
@@ -95,6 +94,7 @@ const calculate = (dataInput) => {
       const value = (typeof(selected[key]) !== 'undefined') ? selected[key] : 0;
       return prevItem + allCoursesKoef[key] * value;
     };
+
     return unitSubj.reduce(getRating, 0) * 1.03;
   };
 

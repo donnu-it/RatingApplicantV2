@@ -9,7 +9,7 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 0
       },
@@ -21,13 +21,13 @@ export default [
       },
       {
         name: "Хімія",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 2
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 3,
         detail: [
@@ -49,7 +49,7 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 0
       },
@@ -61,13 +61,13 @@ export default [
       },
       {
         name: "Хімія",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 2
       },
       {
         name: "Географія",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 3
       }
@@ -95,7 +95,7 @@ export default [
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 2,
         detail: [
@@ -107,7 +107,7 @@ export default [
       },
       {
         name: "Географія",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 3
       }
@@ -135,7 +135,7 @@ export default [
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 2,
         detail: [
@@ -147,7 +147,7 @@ export default [
       },
       {
         name: "Географія",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 3
       }
@@ -175,7 +175,7 @@ export default [
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 2,
         detail: [
@@ -187,7 +187,7 @@ export default [
       },
       {
         name: "Географія",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 3
       }
@@ -215,7 +215,7 @@ export default [
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 2,
         detail: [
@@ -227,7 +227,7 @@ export default [
       },
       {
         name: "Географія",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 3
       }
@@ -255,7 +255,7 @@ export default [
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 2,
         detail: [
@@ -267,7 +267,7 @@ export default [
       },
       {
         name: "Географія",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 3
       }
@@ -283,19 +283,19 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 0
       },
       {
         name: "Математика",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 1
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 2,
         detail: [
@@ -307,7 +307,7 @@ export default [
       },
       {
         name: "Географія",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 3
       }
@@ -323,19 +323,19 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 0
       },
       {
         name: "Математика",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 1
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 2,
         detail: [
@@ -347,7 +347,7 @@ export default [
       },
       {
         name: "Географія",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 3
       }
@@ -363,19 +363,19 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 0
       },
       {
         name: "Математика",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 1
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 2,
         detail: [
@@ -387,7 +387,7 @@ export default [
       },
       {
         name: "Географія",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 3
       }
@@ -403,19 +403,19 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 0
       },
       {
         name: "Математика",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 1
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 2,
         detail: [
@@ -427,7 +427,7 @@ export default [
       },
       {
         name: "Географія",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 3
       }
@@ -443,19 +443,19 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 0
       },
       {
         name: "Математика",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 1
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 2,
         detail: [
@@ -467,7 +467,7 @@ export default [
       },
       {
         name: "Географія",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 3
       }
@@ -501,13 +501,13 @@ export default [
       },
       {
         name: "Географія",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 2
       },
       {
         name: "Математика",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 3
       }
@@ -541,13 +541,13 @@ export default [
       },
       {
         name: "Географія",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 2
       },
       {
         name: "Математика",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 3
       }
@@ -581,13 +581,13 @@ export default [
       },
       {
         name: "Географія",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 2
       },
       {
         name: "Математика",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 3
       }
@@ -603,7 +603,7 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 0
       },
@@ -618,13 +618,13 @@ export default [
       },
       {
         name: "Історія України",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 2
       },
       {
         name: "Географія",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 3
       }
@@ -640,7 +640,7 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 0
       },
@@ -656,13 +656,13 @@ export default [
       },
       {
         name: "Історія України",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 2
       },
       {
         name: "Географія",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 3
       }
@@ -678,7 +678,7 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 0
       },
@@ -694,13 +694,13 @@ export default [
       },
       {
         name: "Історія України",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 2
       },
       {
         name: "Географія",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 3
       }
@@ -722,7 +722,7 @@ export default [
       },
       {
         name: "Історія України",
-        koefItem: 0.5,
+        koefItem: 0.50,
         minVal: 100,
         priority: 1
       },
@@ -768,13 +768,13 @@ export default [
       },
       {
         name: "Математика",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 2
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 3,
         detail: [
@@ -802,7 +802,7 @@ export default [
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 1,
         detail: [
@@ -833,25 +833,25 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.5,
+        koefItem: 0.50,
         minVal: 105,
         priority: 0
       },
       {
         name: "Історія України",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 105,
         priority: 1
       },
       {
         name: "Математика",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 2
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 3,
         detail: [
@@ -873,25 +873,25 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 0
       },
       {
         name: "Математика",
-        koefItem: 0.5,
+        koefItem: 0.50,
         minVal: 110,
         priority: 1
       },
       {
         name: "Фізика",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 2
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 3,
         detail: [
@@ -913,25 +913,25 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 0
       },
       {
         name: "Математика",
-        koefItem: 0.5,
+        koefItem: 0.50,
         minVal: 110,
         priority: 1
       },
       {
         name: "Фізика",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 2
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 3,
         detail: [
@@ -953,25 +953,25 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 0
       },
       {
         name: "Математика",
-        koefItem: 0.5,
+        koefItem: 0.50,
         minVal: 110,
         priority: 1
       },
       {
         name: "Фізика",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 2
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 3,
         detail: [
@@ -993,25 +993,25 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 0
       },
       {
         name: "Математика",
-        koefItem: 0.5,
+        koefItem: 0.50,
         minVal: 110,
         priority: 1
       },
       {
         name: "Фізика",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 2
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 3,
         detail: [
@@ -1033,7 +1033,7 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 0
       },
@@ -1073,7 +1073,7 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 0
       },
@@ -1113,7 +1113,7 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 0
       },
@@ -1153,7 +1153,7 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 0
       },
@@ -1193,7 +1193,7 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 0
       },
@@ -1233,7 +1233,7 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 0
       },
@@ -1285,13 +1285,13 @@ export default [
       },
       {
         name: "Географія ",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 2
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 3,
         detail: [
@@ -1319,7 +1319,7 @@ export default [
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 1,
         detail: [
@@ -1359,7 +1359,7 @@ export default [
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 1,
         detail: [
@@ -1399,7 +1399,7 @@ export default [
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 1,
         detail: [
@@ -1433,25 +1433,25 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 0
       },
       {
         name: "Біологія",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 1
       },
       {
         name: "Математика",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 2
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 3,
         detail: [
@@ -1485,13 +1485,13 @@ export default [
       },
       {
         name: "Математика",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 2
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 3,
         detail: [
@@ -1513,25 +1513,25 @@ export default [
     items: [
       {
         name: "Українська мова",
-        koefItem: 0.4,
+        koefItem: 0.40,
         minVal: 100,
         priority: 0
       },
       {
         name: "Історія України",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 1
       },
       {
         name: "Математика ",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 2
       },
       {
         name: "Іноземна мова",
-        koefItem: 0.3,
+        koefItem: 0.30,
         minVal: 100,
         priority: 3,
         detail: [
@@ -1559,19 +1559,19 @@ export default [
       },
       {
         name: "Хімія",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 1
       },
       {
         name: "Математика",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 2
       },
       {
         name: "Фізика",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 3
       }
@@ -1593,19 +1593,19 @@ export default [
       },
       {
         name: "Хімія",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 1
       },
       {
         name: "Математика",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 2
       },
       {
         name: "Фізика",
-        koefItem: 0.2,
+        koefItem: 0.20,
         minVal: 100,
         priority: 3
       }

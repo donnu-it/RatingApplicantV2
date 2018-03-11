@@ -40,21 +40,21 @@ const arr3 = [
   },
   {
     name: 'Хімія',
-    value: 160.5
+    value: 160
   }
 ];
 const result =   [{
     department: 'Біологічний',
     profession: 'Біологія',
     program: 'Біологія',
-    url: 'http://bio.donnu.edu.ua',
-    koefCert: 0.10,
+    url: 'http://bio.donnu.edu.ua/uk-ua',
+    koefCert: 0.0,
     koefCourses: 0.05,
-    rating: 87.55,
+    rating: 97.85000000000001,
     items: [
       {
         name: 'Українська мова',
-        koefItem: 0.20,
+        koefItem: 0.30,
         minVal: 100,
         priority: 0
       },
@@ -71,10 +71,16 @@ const result =   [{
         priority: 2
       },
       {
-        name: 'Історія України',
+        name: "Іноземна мова",
         koefItem: 0.20,
         minVal: 100,
-        priority: 3
+        priority: 3,
+        detail: [
+          "Англійська",
+          "Німецька",
+          "Французька",
+          "Іспанська"
+        ]
       }
     ]
   },
@@ -82,14 +88,14 @@ const result =   [{
     department: 'Біологічний',
     profession: 'Екологія',
     program: 'Екологія',
-    url: 'http://bio.donnu.edu.ua',
-    koefCert: 0.10,
+    url: 'http://bio.donnu.edu.ua/uk-ua',
+    koefCert: 0.0,
     koefCourses: 0.05,
-    rating: 87.55,
+    rating: 97.85000000000001,
     items: [
       {
         name: 'Українська мова',
-        koefItem: 0.20,
+        koefItem: 0.30,
         minVal: 100,
         priority: 0
       },
@@ -106,43 +112,8 @@ const result =   [{
         priority: 2
       },
       {
-        name: 'Історія України',
+        name: "Географія",
         koefItem: 0.20,
-        minVal: 100,
-        priority: 3
-      }
-    ]
-  },
-  {
-    department: 'Хімічний',
-    profession: 'Хімія',
-    program: 'Біохімія',
-    url: 'http://chem.donnu.edu.ua/',
-    koefCert: 0.10,
-    koefCourses: 0.05,
-    rating: 87.55,
-    items: [
-      {
-        name: 'Українська мова',
-        koefItem: 0.30,
-        minVal: 100,
-        priority: 0
-      },
-      {
-        name: 'Біологія',
-        koefItem: 0.30,
-        minVal: 100,
-        priority: 1
-      },
-      {
-        name: 'Хімія',
-        koefItem: 0.25,
-        minVal: 100,
-        priority: 2
-      },
-      {
-        name: 'Математика',
-        koefItem: 0.25,
         minVal: 100,
         priority: 3
       }
@@ -154,14 +125,14 @@ const result2 =   [
     department: 'Біологічний',
     profession: 'Біологія',
     program: 'Біологія',
-    url: 'http://bio.donnu.edu.ua',
-    koefCert: 0.10,
+    url: 'http://bio.donnu.edu.ua/uk-ua',
+    koefCert: 0.0,
     koefCourses: 0.05,
-    rating: 160.165,
+    rating: 175.615,
     items: [
       {
         name: 'Українська мова',
-        koefItem: 0.20,
+        koefItem: 0.30,
         minVal: 100,
         priority: 0
       },
@@ -178,10 +149,16 @@ const result2 =   [
         priority: 2
       },
       {
-        name: 'Історія України',
+        name: "Іноземна мова",
         koefItem: 0.20,
         minVal: 100,
-        priority: 3
+        priority: 3,
+        detail: [
+          "Англійська",
+          "Німецька",
+          "Французька",
+          "Іспанська"
+        ]
       }
     ]
   },
@@ -189,14 +166,14 @@ const result2 =   [
     department: 'Біологічний',
     profession: 'Екологія',
     program: 'Екологія',
-    url: 'http://bio.donnu.edu.ua',
-    koefCert: 0.10,
+    url: 'http://bio.donnu.edu.ua/uk-ua',
+    koefCert: 0.0,
     koefCourses: 0.05,
-    rating: 160.165,
+    rating: 175.615,
     items: [
       {
         name: 'Українська мова',
-        koefItem: 0.20,
+        koefItem: 0.30,
         minVal: 100,
         priority: 0
       },
@@ -213,43 +190,8 @@ const result2 =   [
         priority: 2
       },
       {
-        name: 'Історія України',
+        name: "Географія",
         koefItem: 0.20,
-        minVal: 100,
-        priority: 3
-      }
-    ]
-  },
-  {
-    department: 'Хімічний',
-    profession: 'Хімія',
-    program: 'Біохімія',
-    url: 'http://chem.donnu.edu.ua/',
-    koefCert: 0.10,
-    koefCourses: 0.05,
-    rating: 156.56,
-    items: [
-      {
-        name: 'Українська мова',
-        koefItem: 0.30,
-        minVal: 100,
-        priority: 0
-      },
-      {
-        name: 'Біологія',
-        koefItem: 0.30,
-        minVal: 100,
-        priority: 1
-      },
-      {
-        name: 'Хімія',
-        koefItem: 0.25,
-        minVal: 100,
-        priority: 2
-      },
-      {
-        name: 'Математика',
-        koefItem: 0.25,
         minVal: 100,
         priority: 3
       }
@@ -261,14 +203,14 @@ const result3 =   [
     department: 'Біологічний',
     profession: 'Біологія',
     program: 'Біологія',
-    url: 'http://bio.donnu.edu.ua',
-    koefCert: 0.10,
+    url: 'http://bio.donnu.edu.ua/uk-ua',
+    koefCert: 0.0,
     koefCourses: 0.05,
-    rating: 151.66235,
+    rating: 169.12085,
     items: [
       {
         name: 'Українська мова',
-        koefItem: 0.20,
+        koefItem: 0.30,
         minVal: 100,
         priority: 0
       },
@@ -285,10 +227,16 @@ const result3 =   [
         priority: 2
       },
       {
-        name: 'Історія України',
+        name: "Іноземна мова",
         koefItem: 0.20,
         minVal: 100,
-        priority: 3
+        priority: 3,
+        detail: [
+          "Англійська",
+          "Німецька",
+          "Французька",
+          "Іспанська"
+        ]
       }
     ]
   },
@@ -296,14 +244,14 @@ const result3 =   [
     department: 'Біологічний',
     profession: 'Екологія',
     program: 'Екологія',
-    url: 'http://bio.donnu.edu.ua',
-    koefCert: 0.10,
+    url: 'http://bio.donnu.edu.ua/uk-ua',
+    koefCert: 0.0,
     koefCourses: 0.05,
-    rating: 151.66235,
+    rating: 169.12085,
     items: [
       {
         name: 'Українська мова',
-        koefItem: 0.20,
+        koefItem: 0.30,
         minVal: 100,
         priority: 0
       },
@@ -320,43 +268,8 @@ const result3 =   [
         priority: 2
       },
       {
-        name: 'Історія України',
+        name: "Географія",
         koefItem: 0.20,
-        minVal: 100,
-        priority: 3
-      }
-    ]
-  },
-  {
-    department: 'Хімічний',
-    profession: 'Хімія',
-    program: 'Біохімія',
-    url: 'http://chem.donnu.edu.ua/',
-    koefCert: 0.10,
-    koefCourses: 0.05,
-    rating: 149.66415,
-    items: [
-      {
-        name: 'Українська мова',
-        koefItem: 0.30,
-        minVal: 100,
-        priority: 0
-      },
-      {
-        name: 'Біологія',
-        koefItem: 0.30,
-        minVal: 100,
-        priority: 1
-      },
-      {
-        name: 'Хімія',
-        koefItem: 0.25,
-        minVal: 100,
-        priority: 2
-      },
-      {
-        name: 'Математика',
-        koefItem: 0.25,
         minVal: 100,
         priority: 3
       }
@@ -371,8 +284,8 @@ const testFunc = (inputValue, result) => {
 
 describe('services.Calcultaion', () => {
   allCourses.forEach(course => {
-    const koef = course.koefCert + course.koefCourses + course.items[0].koefItem + course.items[1].koefItem + course.items[2].koefItem;
-    testFunc(koef, 1);
+    const koef = parseFloat(course.koefCert) + parseFloat(course.koefCourses) + parseFloat(course.items[0].koefItem) + parseFloat(course.items[1].koefItem) + parseFloat(course.items[2].koefItem);
+    testFunc(+koef.toFixed(2), 1);
   });
   it('return {}', () => {
     const calc = calculate(arr);
