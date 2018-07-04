@@ -1,7 +1,6 @@
 import allCourses from './../constants/initialCourses';
 
 const calculate = (dataInput) => {
-
   const allotmentSubjects = (course) => {
     const getMinVal = (item) => {
       if (item.name === "Іноземна мова"){
@@ -95,7 +94,7 @@ const calculate = (dataInput) => {
       return prevItem + allCoursesKoef[key] * value;
     };
 
-    return unitSubj.reduce(getRating, 0) * 1.03;
+    return unitSubj.reduce(getRating, 0);
   };
 
   return {
