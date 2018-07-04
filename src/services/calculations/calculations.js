@@ -94,7 +94,8 @@ const calculate = (dataInput) => {
       return prevItem + allCoursesKoef[key] * value;
     };
 
-    return unitSubj.reduce(getRating, 0);
+    const result = unitSubj.reduce(getRating, 0) * 1.03;
+    return result > 200 ? 200 : result;
   };
 
   return {
