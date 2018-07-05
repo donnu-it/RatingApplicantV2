@@ -475,7 +475,7 @@ export default [
   },
   {
     department: "Економічний",
-    profession: "Міжнародні економічні відносини ",
+    profession: "Міжнародні економічні відносини",
     program: "Міжнародна економіка",
     url: "http://ec.donnu.edu.ua/uk-ua",
     koefCert: 0,
@@ -515,7 +515,7 @@ export default [
   },
   {
     department: "Економічний",
-    profession: "Міжнародні економічні відносини ",
+    profession: "Міжнародні економічні відносини",
     program: "Міжнародний бізнес. Бізнес-переклад",
     url: "http://ec.donnu.edu.ua/uk-ua",
     koefCert: 0,
@@ -555,7 +555,7 @@ export default [
   },
   {
     department: "Економічний",
-    profession: "Міжнародні економічні відносини ",
+    profession: "Міжнародні економічні відносини",
     program: "International Bussiness (Міжнародний бізнес)",
     url: "http://ec.donnu.edu.ua/uk-ua",
     koefCert: 0,
@@ -1284,7 +1284,7 @@ export default [
         priority: 1
       },
       {
-        name: "Географія ",
+        name: "Географія",
         koefItem: 0.20,
         minVal: 100,
         priority: 2
@@ -1336,7 +1336,7 @@ export default [
         priority: 2
       },
       {
-        name: "Географія ",
+        name: "Географія",
         koefItem: 0.35,
         minVal: 100,
         priority: 3
@@ -1376,7 +1376,7 @@ export default [
         priority: 2
       },
       {
-        name: "Географія ",
+        name: "Географія",
         koefItem: 0.35,
         minVal: 100,
         priority: 3
@@ -1416,7 +1416,7 @@ export default [
         priority: 2
       },
       {
-        name: "Географія ",
+        name: "Географія",
         koefItem: 0.35,
         minVal: 100,
         priority: 3
@@ -1524,7 +1524,7 @@ export default [
         priority: 1
       },
       {
-        name: "Математика ",
+        name: "Математика",
         koefItem: 0.30,
         minVal: 100,
         priority: 2

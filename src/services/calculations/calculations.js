@@ -25,7 +25,7 @@ const calculate = (dataInput) => {
       let key;
       let index;
       for(let prop in elem) if (elem.hasOwnProperty(prop)) { key = prop; }
-      index = selectedItemName.indexOf(key);
+      index = selectedItemName.indexOf(key.trim());
       return ((index !== -1) && (dataInput[index].value >= elem[key]));
     };
 
